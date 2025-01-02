@@ -6,9 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for taking the time to report a bug! Please fill out the information below to the best of your ability.
+        ## Thank you for taking the time to report a bug! Please fill out the information below to the best of your ability.
 
-        NOTE: If you have added or updated mods or you have changed mod configs; please revert to a clean install and test again before posting.
+        ## NOTE: If you have added or updated mods or you have changed mod configs; please revert to a clean install and test again before submitting your issue.
   - type: checkboxes
     id: general-attestation
     attributes:
