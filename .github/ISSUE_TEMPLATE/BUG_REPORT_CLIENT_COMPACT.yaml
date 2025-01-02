@@ -29,7 +29,7 @@ body:
     id: client-info
     attributes:
       label: Client Information
-      description: Also tell us, what did you expect to happen?
+      description: Please Provide detailed information about the Minecraft Client you are using to play the modpack
       value: |
         - Modpack Version: 
         - Java Version: 
