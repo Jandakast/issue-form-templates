@@ -1,0 +1,29 @@
+name: 💎 Feature Request
+description: Suggest a mod or a change to the config or scripts
+title: "[Enhancement]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out the feature request!
+  - type: checkboxes
+    id: general-info
+    attributes:
+      label: General Info
+      description: You may select more than one.
+      options:
+        - label: I would like to propose new content
+          required: false
+        - label: I would like to propose changes to existing content
+          required: false
+        - label: I would like to propose adding or removing mods
+          required: false
+  - type: textarea
+    id: suggestion-description
+    attributes:
+      label: Suggestion Description
+      description: Tell us your suggestion
+      placeholder: A clear and concise description of the suggestion. Please use pastebin or gist for long script suggestions.
+    validations:
+      required: true

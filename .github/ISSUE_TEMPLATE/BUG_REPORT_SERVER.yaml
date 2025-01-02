@@ -1,0 +1,131 @@
+name: 🐛 Modpack Bug Report - Client
+description: Use this if you are experiencing an issue that exists when playing the modpack on a server
+title: "[Bug]: "
+labels: [bug, server bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug! Please fill out the information below to the best of your ability.
+
+        NOTE: If you have added or updated mods or you have changed mod configs; please revert to a clean install and test again before posting.
+  - type: checkboxes
+    id: general-attestation
+    attributes:
+      label: General Attestation
+      description: Please attest to the following.
+      options:
+        - label: I am running the latest version of the modpack server files from CurseForge
+          required: true
+        - label: I have not added or removed any mods from the modpack
+          required: true
+        - label: I have not changed any mod configurations or scripts in the modpack
+          required: true
+        - label: I can reproduce this issue consistently when playing on a server but not in singleplayer
+          required: true
+        - label: I have searched for this issue previously and it was either (1) not previously reported, or (2) previously fixed and I am having the same problem after updating to the latest modpack version.
+          required: true
+  - type: input
+    id: modpack-info
+    attributes:
+      label: Modpack version
+      placeholder: ex. 5.0.2
+      description: Please be as specific as possible, latest is not a valid version
+    validations:
+      required: true
+  - type: input
+    id: java-info
+    attributes:
+      label: Java version
+      placeholder: ex. Java version 17.0.13 by Eclipse Adoptium
+      description: Get this information from the modpack instance folder's /logs/latest.log (It's on line 2 without wordwrap)
+    validations:
+      required: true
+  - type: input
+    id: client-os
+    attributes:
+      label: Client Operating System
+      placeholder: ex. Windows 11 23H2
+      description: Please be as specific as possible
+    validations:
+      required: true
+  - type: input
+    id: client-ram
+    attributes:
+      label: Memory allocated to the Client
+      placeholder: ex. 6GB or 6144MB
+      description: Please be as specific as possible
+    validations:
+      required: true
+  - type: input
+    id: server-os
+    attributes:
+      label: Server Operating System
+      placeholder: ex. Ubuntu 20.04
+      description: Please be as specific as possible
+    validations:
+      required: true
+  - type: input
+    id: server-host
+    attributes:
+      label: Server Hoster
+      placeholder: ex. Nodecraft or Self hosted
+      description: Please be as specific as possible
+    validations:
+      required: true
+  - type: input
+    id: server-ram
+    attributes:
+      label: Memory allocated to the Server
+      placeholder: ex. 6GB or 6144MB
+      description: Please be as specific as possible
+    validations:
+      required: true
+  - type: input
+    id: server-sponge
+    attributes:
+      label: Is this a SpongeForge server?
+      placeholder: ex. Yes or No
+      description: Please be as specific as possible
+    validations:
+      required: true
+  - type: input
+    id: world-info
+    attributes:
+      label: Modpack Version world created in
+      placeholder: ex. 5.0.2
+      description: Did you start the world in an older version of the modpack?
+    validations:
+      required: true  
+  - type: input
+    id: bug-info
+    attributes:
+      label: Did this behavior use to work in the previous version? 
+      placeholder: ex. Yes, in 5.0.1
+      description: Please be as specific as possible
+    validations:
+      required: true  
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Issue Description
+      description: A clear and concise description of the problem
+      placeholder: A clear and concise description of the problem
+    validations:
+      required: true
+  - type: textarea
+    id: issue-steps
+    attributes:
+      label: Steps to Reproduce the Issue
+      description: A youtube video or a set of steps to reproduce
+      placeholder: A youtube video or a set of steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Additional Information
+      description: Please post any crash reports, screenshots, etc. here. (use Pastebin or Imgur accordingly)
+      placeholder: Please use pastebin or gist for crash reports and log files
+    validations:
+      required: false
