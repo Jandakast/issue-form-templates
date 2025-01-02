@@ -68,9 +68,9 @@ body:
   - type: input
     id: server-host
     attributes:
-      label: Server Hoster
+      label: Where is the Server hosted?
       placeholder: ex. Nodecraft or Self hosted
-      description: Please be as specific as possible
+      description: Please be as specific as possible!
     validations:
       required: true
   - type: input
