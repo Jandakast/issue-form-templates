@@ -1,4 +1,4 @@
-name: 🐛 Modpack Bug Report - Client
+name: 🐛 Modpack Bug Report - Server
 description: Use this if you are experiencing an issue that exists when playing the modpack on a server
 title: "[Bug]: "
 labels: [bug, server bug]
