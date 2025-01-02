@@ -1,0 +1,67 @@
+name: 🐛 Modpack Bug Report - Client (Compact)
+description: Use this if you are experiencing an issue that exists when playing the modpack in singleplayer
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug! Please fill out the information below to the best of your ability.
+
+        NOTE: If you have added or updated mods or you have changed mod configs; please revert to a clean install and test again before posting.
+  - type: checkboxes
+    id: general-attestation
+    attributes:
+      label: General Attestation
+      description: Please attest to the following.
+      options:
+        - label: I am running the latest version of the modpack from CurseForge
+          required: true
+        - label: I have not added or removed any mods from the modpack
+          required: true
+        - label: I have not changed any mod configurations or scripts in the modpack
+          required: true
+        - label: I can reproduce this issue consistently in single-player
+          required: true
+        - label: I have searched for this issue previously and it was either (1) not previously reported, or (2) previously fixed and I am having the same problem after updating to the latest modpack version.
+          required: true
+  - type: textarea
+    id: client-info
+    attributes:
+      label: Client Information
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: |
+        - Modpack Version: 
+        - Java Version: 
+        - Client Operating System: 
+        - Memory allocated to the Client: 
+        - Launcher used for the Modpack: 
+        - Modpack Version world created in: 
+        - Did this behavior use to work in the previous version?: 
+    validations:
+      required: true
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Issue Description
+      description: A clear and concise description of the problem
+      placeholder: A clear and concise description of the problem
+    validations:
+      required: true
+  - type: textarea
+    id: issue-steps
+    attributes:
+      label: Steps to Reproduce the Issue
+      description: A youtube video or a set of steps to reproduce
+      placeholder: A youtube video or a set of steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Additional Information
+      description: Please post any crash reports, screenshots, etc. here. (use Pastebin or Imgur accordingly)
+      placeholder: Please use pastebin or gist for crash reports and log files
+    validations:
+      required: false
