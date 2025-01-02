@@ -30,7 +30,15 @@ body:
     attributes:
       label: Client Information
       description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
+      placeholder: |
+        - Modpack Version: 
+        - Java Version: 
+        - Server Operating System: 
+        - Memory allocated to the Server: 
+        - Server Host: 
+        - Modpack Version world created in: 
+        - Did this behavior use to work in the previous version?: 
+        - Is this a SpongeForge server?:
       value: |
         - Modpack Version: 
         - Java Version: 
@@ -47,7 +55,12 @@ body:
     attributes:
       label: Client Information
       description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
+      placeholder: |
+        - Modpack Version: 
+        - Java Version: 
+        - Client Operating System: 
+        - Memory allocated to the Client: 
+        - Launcher used for the Modpack: 
       value: |
         - Modpack Version: 
         - Java Version: 

@@ -30,7 +30,14 @@ body:
     attributes:
       label: Client Information
       description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
+      placeholder: |
+        - Modpack Version: 
+        - Java Version: 
+        - Client Operating System: 
+        - Memory allocated to the Client: 
+        - Launcher used for the Modpack: 
+        - Modpack Version world created in: 
+        - Did this behavior use to work in the previous version?: 
       value: |
         - Modpack Version: 
         - Java Version: 
