@@ -95,10 +95,19 @@ body:
     id: issue-steps
     attributes:
       label: Steps to Reproduce the Issue
-      description: A youtube video or a set of steps to reproduce
-      placeholder: A youtube video or a set of steps to reproduce
+      description: A twitch or youtube video link or a set of steps to reproduce
+      placeholder: A twitch or youtube video link or a set of steps to reproduce
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+          > [!TIP]
+          > The "logs" folder can be found in the installation directory for the modpack. 
+          > We generally only need the latest crash report which can be found in the "logs/crash-reports" folder
+          > If there is no crash then we may also need the "logs/latest.log" as well
+          > 
+          > Please use pastebin or gist when sharing logs
   - type: textarea
     id: logs
     attributes:
